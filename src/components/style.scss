@@ -1,0 +1,177 @@
+.container_calc {
+    width: 307px;
+    height: 100vh;
+    align-items: center;
+    margin: auto;
+    display: flex;
+
+    .camada_a{
+        border-radius: 5px 5px 0 0;
+        width: 307px;
+        height: 537px;
+        background:  #006A6A;;
+        display: flex;
+        align-items: flex-end;
+            flex-direction: column;
+            justify-content: flex-end;
+        .logo {
+            grid-area: logo;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            img{
+            max-width: 47%;
+            height: auto;
+    
+            }
+        }
+        .camada_b{
+        background: black;
+        height: 466px;
+        width: 299px;
+        display: flex;
+        align-items: flex-end;
+            margin: 0 auto;
+        margin-bottom: 5px;
+        flex-direction: column;
+        justify-content: flex-end;
+        // cursor: pointer;
+        .displ{
+            display: flex;
+            flex-direction: column;
+            background: black;
+            color: white;
+            width: 100%;
+            height: 120px;
+            .prev { 
+                width: 80%;
+                height: 100px;
+                margin: auto;
+                justify-content: flex-end;
+                display: flex;
+                align-items: center;
+                font-size: 24px;
+            }
+        }
+        }
+        .camada_c {
+        height: 314px;
+        width: 294px;
+        display: flex;
+        background: black;
+            margin: 0 auto;
+        margin-bottom: 5px;
+    
+        }
+    }
+
+}
+//   html, body, 
+  .grid-container { 
+    height: 100%; 
+    margin: 0;
+    width: 307px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    grid-template-areas:
+    "reset clear raiz divide"
+    "seven eight nine multiply"
+    "four five six decrease"
+    "one two- three add"
+    "bigger_smaller zero point equal";
+    .btn{
+      color: white;
+      font-size: 20px;
+      background: #373737;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: arial,sans-serif;
+      &:active {
+          background: #aca5a5;
+        }
+}
+    
+    .btn_op{
+      background: #262626;
+      &:last-child{
+          background: #DF7F00;
+      }
+    }
+    .logo {
+        grid-area: logo;
+        background-color: #006A6A;
+        display: flex;
+        justify-content: center;
+        img{
+        max-width: 47%;
+        height: auto;
+
+        }
+    }
+
+    .display { 
+        grid-area: display;
+        height: 147px;
+        margin: 5px;
+    }
+
+    .reset { grid-area: reset; }
+
+    .clear { grid-area: clear;
+    background-image: url('../assets/backspaces.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 68%;
+    max-height: 68%;
+    min-width: 40%;
+    min-height: 40%;
+}
+
+    .raiz { grid-area: raiz;
+        background-image: url('../assets/raiz.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 68%;
+        max-height: 68%;
+        min-width: 27%;
+        min-height: 35%;
+    }
+
+    .divide { grid-area: divide; }
+
+    .multiply { grid-area: multiply; }
+
+    .decrease { grid-area: decrease; }
+
+    .add { grid-area: add; }
+
+    .equal { grid-area: equal; }
+
+    .bigger_smaller { grid-area: bigger_smaller; }
+
+    .zero { grid-area: zero; }
+
+    .point { grid-area: point; }
+
+    .one { grid-area: one; }
+
+    .two- { grid-area: two-; }
+
+    .three { grid-area: three; }
+
+    .four { grid-area: four; }
+
+    .five { grid-area: five; }
+
+    .six { grid-area: six; }
+
+    .seven { grid-area: seven; }
+
+    .eight { grid-area: eight; }
+
+    .nine { grid-area: nine; }
+}
