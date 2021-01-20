@@ -1,4 +1,4 @@
-# desafio_front_1
+# Calculator Vuejs
 
 ## Project setup
 ```

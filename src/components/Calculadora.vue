@@ -1,7 +1,10 @@
 <template>
 <div class="container_calc">
   <div class="camada_a">
-    <picture class="logo"> <img logo__image src="../assets/emix_logo.png" alt=""></picture>
+    <div class="logo" style="color: white;">
+    <!-- <picture class="logo"> <img logo__image src="../assets/" alt=""></picture> -->
+      <h1>Calculadora</h1>
+    </div>
     <div class="camada_b">
       <div class="displ" >
         <div class="prev">{{current}}</div>
